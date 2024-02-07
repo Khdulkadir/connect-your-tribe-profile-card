@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,17 +14,7 @@ body {
   background: silver;
 }
 
-header {
-  padding: 0.5rem;
-  background: red;
-  color: white;
-
-  h1 {
-    text-transform: uppercase;
-  }
-}
-
-article {
+main {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -39,14 +29,9 @@ article {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   > p {
     font-size: 2rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Permanent Marker", cursive;
     transform-origin: center;
     transform: rotate(-6deg);
     word-break: break-all;
   }
-}
-
-footer {
-  height: 1rem;
-  background: red;
 }

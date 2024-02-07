@@ -1,29 +1,34 @@
 <%- include('./partials/head') %>
-
-<article id="card">
+<article>
   <h2>
     HvA<br />
     Student
   </h2>
 
-  <img src="assets\web.png" alt="" width="800" height="800" id="img1" />
+  <img class="profile" src="assets\web.png" alt="" width="150" id="img1" />
 
   <h1><%= data.name %> <%= data.surname %></h1>
-
-  <p>
-    <a href="mailto:youremail@example.com" class="custom-link">@Email</a><br />
-    <a href="<%= data.website %>" class="custom-link">@Github</a><br />
-    <a href="https://www.facebook.com/yourprofile" class="custom-link"
-      >@Facebook</a
-    ><br />
-    <img
-      src="assets/arrow_down_circle_icon_183837.ico"
-      class="icon"
-      id="expand-icon"
-    />
-  </p>
+  <div class="ul-wrapper">
+    <ul>
+      <li>
+        <a href="mailto:<%= data.email %>" class="custom-link">@ Email</a>
+      </li>
+      <li><a href="<%= data.website %>" class="custom-link">@ Github</a></li>
+      <li>
+        <a href="https://www.facebook.com/yourprofile" class="custom-link"
+          >@ Facebook</a
+        >
+      </li>
+      <li>
+        <img
+          src="assets/arrow_down_circle_icon_183837.ico"
+          class="icon"
+          id="expand-icon"
+        />
+      </li>
+    </ul>
+  </div>
 </article>
-
 <script src="scripts/script.js"></script>
 
 <%- include('./partials/foot') %>
