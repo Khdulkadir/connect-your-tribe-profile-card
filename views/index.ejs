@@ -1,34 +1,53 @@
 <%- include('./partials/head') %>
+<div class="stars"></div>
+
 <article>
-  <h2>
-    HvA<br />
-    Student
-  </h2>
-
-  <img class="profile" src="assets\web.png" alt="" width="150" id="img1" />
-
-  <h1><%= data.name %> <%= data.surname %></h1>
-  <div class="ul-wrapper">
-    <ul>
+  <div class="left">
+    <div class="name">
+      <h1><%= data.name %> <%= data.surname %></h1>
+      <h2>Frontend Developer</h2>
+    </div>
+    <ul class="social">
       <li>
-        <a href="mailto:<%= data.email %>" class="custom-link">@ Email</a>
-      </li>
-      <li><a href="<%= data.website %>" class="custom-link">@ Github</a></li>
-      <li>
-        <a href="https://www.facebook.com/yourprofile" class="custom-link"
-          >@ Facebook</a
+        <a href="mailto:<%= data.email %>" class="custom-link"
+          ><img src="assets/email.png" class="social-icon" width="25px" />
+          Email</a
         >
       </li>
       <li>
-        <img
-          src="assets/arrow_down_circle_icon_183837.ico"
-          class="icon"
-          id="expand-icon"
-        />
+        <a href="<%= data.website %>" class="custom-link"
+          ><img src="assets/github.png" class="social-icon" width="25px" />
+          Github</a
+        >
+      </li>
+      <li>
+        <a href="https://www.facebook.com/yourprofile"
+          ><img
+            src="assets/phone-call.png"
+            class="social-icon"
+            width="25px"
+          />Bellen</a
+        >
       </li>
     </ul>
   </div>
+
+  <div class="right">
+    <img
+      class="profile"
+      src="assets\img-profile.jpg"
+      alt=""
+      width="150"
+      id="img1"
+    />
+  </div>
+  <img src="assets/next.png" class="icon" width="40px" />
 </article>
-<script src="scripts/script.js"></script>
+<div class="sliding-box">
+  <div class="moving-div first">HTML</div>
+  <div class="moving-div second">CSS</div>
+  <div class="moving-div third">Javascript</div>
+</div>
+<script src="scripts/scripts.js"></script>
 
 <%- include('./partials/foot') %>
