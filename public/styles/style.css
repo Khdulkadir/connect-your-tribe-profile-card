@@ -180,13 +180,8 @@ img.social-icon {
 
 body {
   height: 100vh;
-}
-
-div.card-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 1100px) {
