@@ -177,3 +177,7 @@ img.social-icon {
     top: calc(100% - 100px);
   }
 }
+
+div.card-wrapper {
+  transform: scale(0.3);
+}
