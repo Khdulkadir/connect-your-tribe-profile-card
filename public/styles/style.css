@@ -178,6 +178,13 @@ img.social-icon {
   }
 }
 
+div.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 1100px) {
   div.card-wrapper {
     transform: scale(0.3);
