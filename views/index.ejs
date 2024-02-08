@@ -1,63 +1,65 @@
 <%- include('./partials/head') %>
 
 <div class="stars"></div>
-<article>
-  <div class="left">
-    <div class="name">
-      <h1><%= data.name %> <%= data.surname %></h1>
-      <h2>Frontend Developer</h2>
+<div class="card-wrapper">
+  <article>
+    <div class="left">
+      <div class="name">
+        <h1><%= data.name %> <%= data.surname %></h1>
+        <h2>Frontend Developer</h2>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="mailto:<%= data.email %>" class="custom-link"
+            ><img
+              src="assets/email.png"
+              alt="envelope"
+              class="social-icon"
+              width="25"
+            />
+            Email</a
+          >
+        </li>
+        <li>
+          <a href="<%= data.website %>" class="custom-link"
+            ><img
+              src="assets/github.png"
+              alt="github"
+              class="social-icon"
+              width="25"
+            />
+            Github</a
+          >
+        </li>
+        <li>
+          <a href="tel:<%= data.phone_number %>"
+            ><img
+              src="assets/phone-call.png"
+              alt="phone"
+              class="social-icon"
+              width="25"
+            />Bellen</a
+          >
+        </li>
+      </ul>
     </div>
-    <ul class="social">
-      <li>
-        <a href="mailto:<%= data.email %>" class="custom-link"
-          ><img
-            src="assets/email.png"
-            alt="envelope"
-            class="social-icon"
-            width="25"
-          />
-          Email</a
-        >
-      </li>
-      <li>
-        <a href="<%= data.website %>" class="custom-link"
-          ><img
-            src="assets/github.png"
-            alt="github"
-            class="social-icon"
-            width="25"
-          />
-          Github</a
-        >
-      </li>
-      <li>
-        <a href="tel:<%= data.phone_number %>"
-          ><img
-            src="assets/phone-call.png"
-            alt="phone"
-            class="social-icon"
-            width="25"
-          />Bellen</a
-        >
-      </li>
-    </ul>
-  </div>
 
-  <div class="right">
-    <img
-      class="profile"
-      src="assets\img-profile.jpg"
-      alt="profile"
-      width="150"
-      id="img1"
-    />
+    <div class="right">
+      <img
+        class="profile"
+        src="assets\img-profile.jpg"
+        alt="profile"
+        width="150"
+        id="img1"
+      />
+    </div>
+    <img src="assets/next.png" class="icon" width="40" />
+  </article>
+  <div class="sliding-box">
+    <div class="moving-div first">HTML</div>
+    <div class="moving-div second">CSS</div>
+    <div class="moving-div third">Javascript</div>
   </div>
-  <img src="assets/next.png" class="icon" width="40" />
-</article>
-<div class="sliding-box">
-  <div class="moving-div first">HTML</div>
-  <div class="moving-div second">CSS</div>
-  <div class="moving-div third">Javascript</div>
 </div>
 <script src="scripts/scripts.js"></script>
 
